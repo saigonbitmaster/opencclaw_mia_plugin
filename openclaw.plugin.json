@@ -1,0 +1,33 @@
+{
+  "id": "openclaw-plugin-mina",
+  "name": "Mina Toolkit",
+  "description": "Add Mina Toolkit tools to OpenClaw.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "commands": [
+    {
+      "name": "ping_mina",
+      "description": "Check if the mina extension is alive"
+    },
+    {
+      "name": "mina_send",
+      "description": "Execute a cryptographically signed MINA transfer on Devnet"
+    },
+    {
+      "name": "query_tx",
+      "description": "Inspect the live validation state of a transaction hash"
+    }
+  ],
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "echo"
+    ]
+  }
+}
